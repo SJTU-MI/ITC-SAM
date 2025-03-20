@@ -1,22 +1,14 @@
-# HTPS4HTTEMOs
-High-Throughput Screening for High-Temperature Thermoelectric Metal Oxides (HTPS4HTTEMOs)
-
-## Publication
-Ma S, Rao Y, Huang X, et al. High-throughput discovery of metal oxides with high thermoelectric performance via interpretable feature engineering on small data[J]. Materials Today Physics, 2024, 45: 101457 [[Link](https://doi.org/10.1016/j.mtphys.2024.101457)].
+# ITC-SAM
+Physical-based and data-driven hybrid protocol for optimizing thermal transport across solid-water interfaces with self-assembled monolayers
 
 ## Description
-In this work, we propose a screening framework combining interpretable machine learning with high-throughput calculations to identify a range of metal oxides that exhibit both high-temperature tolerance and high power factors. Aiming at the problem of weak generalization ability of small data with power factors and the challenge of model interpretation, we employ symbolic regression for feature creation. This approach enhances the robustness of the model while preserving the physical meaning of features, outperforming traditional combinations of descriptors. Next, we combine melting point prediction and power factor intersection screening to extract 33 candidate metal oxides for high-temperature thermoelectric applications from a pool of 48,694 compounds in the Materials Project database. Lastly, we apply the Boltzmann transport theory to perform DFT calculations on the electrical transport properties at 1000K. The relaxation time is approximated by employing constant electron-phonon coupling based on the deformation potential theory. Considering band degeneracy, the electron group velocity is obtained using the momentum matrix element method, yielding 28 materials with power factors greater than 50 μWcm<sup>-1</sup>K<sup>-2</sup>. 
-
-## Installation
+Thermal transport across the solid-water interface in self-assembled monolayer (SAM) is crucial for thermal management applications. However, the vast number of end groups options and the scarcity of thermal property data make the SAM design challenging. To this end, here we have developed and proposed a machine learning (ML) assisted SAM design strategy for tuning the interfacial thermal conductance (ITC) considering various end groups. We first built a SAM thermal transport database with 300 different end groups via the high-throughput molecular dynamics (MD) simulations, with the ITC values ranging from 38.93 to 240.31 MW/m²K. The physical design framework based on MD incorporating 135 descriptors is then proposed, which significantly improves the performance of ML models for ITC prediction. Furthermore, the feature analysis based on data-driven approaches shows that as compared to features such as vibrational spectral coupling strength and SAM length, interfacial interactions are the core factor influencing interfacial thermal transport. Building on this, we use grid-based symbolic regression to generate several simple and interpretable descriptors at the Pareto front of nearly 30,000 fitting formulas. In contrast to relying on a single interfacial interaction metric, the new descriptors facilitate the identification of high-ITC SAMs. The framework and results presented in this work fill the knowledge gap in tuning interfacial thermal transport under complex SAM end group designs, providing both data and theoretical support for related applications.
 
 ### Files loading:
 To download, clone this repository:<br>
 ````
-git clone https://github.com/SJTU-MI/HTPS4HTTEMOs.git
+git clone https://github.com/SJTU-MI/ITC-SAM.git
 ````
-
-### Package requirements:
-Some packages need to be installed on demand, such as [Pymatgen](https://pymatgen.org/), [Xenonpy](https://github.com/yoshida-lab/XenonPy), [scikit-learn](https://scikit-learn.org/stable/), [BayesianOptimization](https://github.com/bayesian-optimization/BayesianOptimization).
 
 ## Try the desired parts of the project:
 
